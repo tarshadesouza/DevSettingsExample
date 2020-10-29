@@ -1,0 +1,6 @@
+framework module Pods_DevSettingsExample {
+  umbrella header "Pods-DevSettingsExample-umbrella.h"
+
+  export *
+  module * { export * }
+}

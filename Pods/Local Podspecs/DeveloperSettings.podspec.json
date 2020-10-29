@@ -1,0 +1,33 @@
+{
+  "name": "DeveloperSettings",
+  "version": "0.1.0",
+  "summary": "DeveloperSettings pod is a component to help with debugging and other use cases of an application cycle.",
+  "description": "Bug Report: Report bugs easily, Networking/Api calls: debug network calls easily, Analytics: Analytic tagging debugging",
+  "homepage": "https://github.com/tarshadesouza/DeveloperSettings",
+  "license": {
+  },
+  "authors": {
+    "Tarsha De Souza": "tarshadesouza@hotmail.com"
+  },
+  "source": {
+    "git": "git@github.com:tarshadesouza/DeveloperSettings.git",
+    "tag": "0.1.0"
+  },
+  "swift_versions": "5.0",
+  "platforms": {
+    "ios": "10.0"
+  },
+  "static_framework": true,
+  "source_files": "DeveloperSettings/**/*.{h,m,swift}",
+  "dependencies": {
+    "Alamofire": [
+      "~> 5.2"
+    ]
+  },
+  "resource_bundles": {
+    "DeveloperSettingsResources": [
+      "DeveloperSettings/**/*.{ttf,json,gif,storyboard,xib,xcassets}"
+    ]
+  },
+  "swift_version": "5.0"
+}

@@ -1,0 +1,6 @@
+framework module DeveloperSettings {
+  umbrella header "DeveloperSettings-umbrella.h"
+
+  export *
+  module * { export * }
+}

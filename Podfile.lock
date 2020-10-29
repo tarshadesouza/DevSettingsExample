@@ -1,0 +1,23 @@
+PODS:
+  - Alamofire (5.3.0)
+  - DeveloperSettings (0.1.0):
+    - Alamofire (~> 5.2)
+
+DEPENDENCIES:
+  - DeveloperSettings (from `../DeveloperSettings`)
+
+SPEC REPOS:
+  trunk:
+    - Alamofire
+
+EXTERNAL SOURCES:
+  DeveloperSettings:
+    :path: "../DeveloperSettings"
+
+SPEC CHECKSUMS:
+  Alamofire: 2c792affbdc2f18016e08fdbcacd60aebe1ba593
+  DeveloperSettings: 8ff14d63523e7803502635532ab0160ee33799f9
+
+PODFILE CHECKSUM: 9faecc3249cc574438760db883f49bb9456c2994
+
+COCOAPODS: 1.8.4
