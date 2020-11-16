@@ -50,5 +50,4 @@ struct URLImage: View {
 			return placeholder
 		}
 	}
-	
 }

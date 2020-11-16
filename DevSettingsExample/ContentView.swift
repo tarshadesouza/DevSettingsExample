@@ -66,8 +66,6 @@ struct CollectionView: View {
 					URLImage(url: self.data.thumbnail)
 						.frame(width: 150, height: 100)
 						.padding()
-						
-						
 					Text(self.data.title)
 				}
 			}
