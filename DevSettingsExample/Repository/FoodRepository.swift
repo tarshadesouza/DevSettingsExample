@@ -7,24 +7,32 @@
 
 import Foundation
 import Alamofire
+import Combine
+import SwiftUI
 
 typealias FoodResult = Swift.Result<Foods, AFError>
 
 protocol FoodRepositoryProtocol {
-	func retrieveData(completion: @escaping (FoodResult) -> Void)
+	func retrieveData()
 }
 
 /// Manages connection to the backend 
-class FoodRepository: BaseRepository, FoodRepositoryProtocol {
+class FoodRepository: BaseRepository, FoodRepositoryProtocol, ObservableObject {
+	@Published var foodList = Foods(results: [])
 	
 	init() {
 		super.init(manager: RequestManager())
 	}
 	
-	func retrieveData(completion: @escaping (FoodResult) -> Void) {
+	func retrieveData() {
 		let queryObj = FoodEndPoints.retrieveData
 		manager.request(queryObj)?.logResponse().responseDecodable { (response: DataResponse<Foods, AFError>) in
-			completion(response.result)
+			switch response.result {
+			case .success(let data):
+				self.foodList = data
+			case .failure:
+				break
+			}
 		}
 	}
 }

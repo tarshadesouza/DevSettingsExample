@@ -9,17 +9,12 @@ import Foundation
 import UIKit
 
 struct Foods: Codable {
-	let foodResults: [Result]
+	let results: [Result]
 }
 
-struct Result: Codable {
-	let title: String
-	let href: String
-	let ingredients: String
-	let thumbnail: String
-}
-
-
-struct FoodViewObject {
-	var data: [Result]
+class Result: Codable {
+	var title: String
+	var href: String
+	var ingredients: String
+	var thumbnail: String
 }
